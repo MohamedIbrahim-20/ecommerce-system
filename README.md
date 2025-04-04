@@ -168,13 +168,6 @@ Error: Insufficient balance
 - **Stock Management**: Stock is checked when adding to the cart and at checkout, but not reserved until checkout succeeds.
 - **Expiration**: Products are checked for expiration based on the current date at the time of cart addition and checkout.
 
-## Potential Improvements
-- Add a database for persistent storage of products and customer data.
-- Implement a user interface (e.g., CLI or GUI) instead of console output.
-- Refine the shipping fee structure (e.g., tiered rates: $5 for 0-1kg, $10 for 1-3kg, etc.).
-- Add weight display in the receipt for transparency.
-- Support product categories and search functionality.
-
 ## License
 This project is open-source and available under the MIT License.
 
