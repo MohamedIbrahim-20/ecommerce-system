@@ -24,13 +24,14 @@ public class EcommerceSystem {
         checkoutService.checkout(customer, cart);
 
         Cart cart2 = new Cart();
-        cart2.add(expiredCheese, 1);
         System.out.println("\n--- Testing Expired Product ---");
+        cart2.add(expiredCheese, 1);
         checkoutService.checkout(customer, cart2);
 
         Cart cart3 = new Cart();
-        cart3.add(cheese, 11);
         System.out.println("\n--- Testing Out of Stock ---");
+        cart3.add(cheese, 9);
+        System.out.println("\n--- Testing Empty Cart ---");
         checkoutService.checkout(customer, cart3);
 
         Customer poorCustomer = new Customer(50);
