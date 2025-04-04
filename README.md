@@ -20,6 +20,8 @@ the total weight of shippable items.
 ## Project Structure
 The project is organized with the main file (`EcommerceSystem.java`) at the root of the `src` directory, and other classes in packages for modularity:
 ```
+
+## Project structure
 ```
 ecommerce-system/
 ├── src/
@@ -127,6 +129,38 @@ ecommerce-system/
    java EcommerceSystem
    
    ```
+## Sample Output
+Below is an example of the program's output for various test cases:
+```
+--- Normal Checkout ---
+** Shipment notice **
+1x Biscuits 700.0g
+2x Cheese 400.0g
+Total package weight 1.1kg
+
+** Checkout receipt **
+1x Biscuits 150.0
+1x Scratch Card 10.0
+2x Cheese 200.0
+----------------------
+Subtotal 360.0
+Shipping 11.0
+Amount 371.0
+Customer balance: 629.0
+
+--- Testing Expired Product ---
+Error: Product Expired Cheese is expired
+Error: Cart is empty
+
+--- Testing Out of Stock ---
+Error: Not enough stock for Cheese
+
+--- Testing Empty Cart ---
+Error: Cart is empty
+
+--- Testing Insufficient Balance ---
+Error: Insufficient balance
+```
 
 ## Assumptions
 - **Shipping Fee**: Dynamic fee calculated at $10 per kilogram of total weight of shippable items, with a minimum fee of $5. Non-shippable items incur no fee.
