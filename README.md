@@ -114,15 +114,18 @@ ecommerce-system/
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/MohamedIbrahim-20/ecommerce-system.git
-   cd ecommerce-system 
+   cd ecommerce-system
+   
    ```
 2. **Compile the Code**:
    ```bash
-   javac -d . src/com/fawry/ecommerce/model/*.java src/com/fawry/ecommerce/service/*.java src/EcommerceSystem.java 
+   javac -d . src/com/fawry/ecommerce/model/*.java src/com/fawry/ecommerce/service/*.java src/EcommerceSystem.java
+   
    ```
 3. **Run the Program**:
    ```bash
-   java EcommerceSystem 
+   java EcommerceSystem
+   
    ```
 
 ## Assumptions
