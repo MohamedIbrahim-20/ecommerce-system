@@ -1,5 +1,22 @@
 # ecommerce-system
 
+ecommerce-system/
+├── src/
+│   ├── EcommerceSystem.java
+│   ├── com/
+│   │   ├── fawry/
+│   │   │   ├── ecommerce/
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── ShippableItem.java
+│   │   │   │   │   ├── ShippedItem.java
+│   │   │   │   │   ├── Product.java
+│   │   │   │   │   ├── Cart.java
+│   │   │   │   │   └── Customer.java
+│   │   │   │   ├── service/
+│   │   │   │   │   ├── ShippingService.java
+│   │   │   │   │   └── CheckoutService.java
+└── README.md
+
 
 ### Package Descriptions
 - **`src/`**: Contains the main file `EcommerceSystem.java` (no package).
