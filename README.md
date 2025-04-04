@@ -113,7 +113,7 @@ ecommerce-system/
 ## How to Run
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/ecommerce-system.git
+   https://github.com/MohamedIbrahim-20/ecommerce-system.git
    cd ecommerce-system
    ```
 2. **Compile the Code**:
