@@ -163,7 +163,7 @@ Error: Insufficient balance
 ```
 
 ## Assumptions
-- **Shipping Fee**: Dynamic fee calculated at $10 per kilogram of total weight of shippable items, with a minimum fee of $5. Non-shippable items incur no fee.
+- **Shipping Fee**: Dynamic fee calculated at $10 per kilogram of total weight of shippable items, with a minimum fee of $5. Non-shippable items require no fee.
 - **Weight Units**: Individual item weights are in grams; total weight is converted to kilograms for shipping calculations and display.
 - **Stock Management**: Stock is checked when adding to the cart and at checkout, but not reserved until checkout succeeds.
 - **Expiration**: Products are checked for expiration based on the current date at the time of cart addition and checkout.
