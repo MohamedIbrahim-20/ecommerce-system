@@ -1,5 +1,26 @@
 # ecommerce-system
 
+---
+
+```markdown
+# E-commerce System
+
+This is a simple e-commerce system implemented in Java, designed to handle basic online shopping functionalities
+such as product management, cart operations, checkout processes, and shipping. The system includes product expirability
+based on expiration dates, stock management, and dynamic shipping fees calculated based on
+the total weight of shippable items.
+
+## Features
+- **Product Management**: Define products with attributes like name, price, quantity, shippability, weight, and expiration date.
+- **Cart Functionality**: Add products to a cart with checks for stock availability and expiration.
+- **Checkout Process**: Validate cart contents, calculate subtotal and dynamic shipping fees, process payments, update stock, and handle shipping.
+- **Shipping Handling**: Generate shipment notices for shippable items, calculating total weight and grouping items by name.
+- **Error Handling**: Manage cases like empty carts, insufficient balance, out-of-stock products, and expired items.
+
+## Project Structure
+The project is organized with the main file (`EcommerceSystem.java`) at the root of the `src` directory, and other classes in packages for modularity:
+```
+```
 ecommerce-system/
 ├── src/
 │   ├── EcommerceSystem.java
@@ -16,7 +37,7 @@ ecommerce-system/
 │   │   │   │   │   ├── ShippingService.java
 │   │   │   │   │   └── CheckoutService.java
 └── README.md
-
+```
 
 ### Package Descriptions
 - **`src/`**: Contains the main file `EcommerceSystem.java` (no package).
@@ -94,3 +115,29 @@ ecommerce-system/
    ```bash
    git clone https://github.com/yourusername/ecommerce-system.git
    cd ecommerce-system
+   ```
+2. **Compile the Code**:
+   ```bash
+   javac -d . src/com/fawry/ecommerce/model/*.java src/com/fawry/ecommerce/service/*.java src/EcommerceSystem.java
+   ```
+3. **Run the Program**:
+   ```bash
+   java EcommerceSystem
+   ```
+
+## Assumptions
+- **Shipping Fee**: Dynamic fee calculated at $10 per kilogram of total weight of shippable items, with a minimum fee of $5. Non-shippable items incur no fee.
+- **Weight Units**: Individual item weights are in grams; total weight is converted to kilograms for shipping calculations and display.
+- **Stock Management**: Stock is checked when adding to the cart and at checkout, but not reserved until checkout succeeds.
+- **Expiration**: Products are checked for expiration based on the current date at the time of cart addition and checkout.
+
+## Potential Improvements
+- Add a database for persistent storage of products and customer data.
+- Implement a user interface (e.g., CLI or GUI) instead of console output.
+- Refine the shipping fee structure (e.g., tiered rates: $5 for 0-1kg, $10 for 1-3kg, etc.).
+- Add weight display in the receipt for transparency.
+- Support product categories and search functionality.
+
+## License
+This project is open-source and available under the MIT License.
+
